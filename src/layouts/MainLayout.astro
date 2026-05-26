@@ -13,7 +13,9 @@ import Navbar from "../components/Navbar.astro";
         <title>Your portafolio name</title>
     </head>
     <body>
-        <!-- This div works like a container -->
         <Navbar />
+        <main>
+            <slot />
+        </main>
     </body>
 </html>
