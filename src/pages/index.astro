@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { IoLogoWhatsapp, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 ---
 
 <MainLayout>
@@ -9,7 +10,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 				class="font-family-gabarito font-bold text-4xl md:text-5xl text-center leading-tight"
 			>
 				Hey!, I am <span
-					class="bg-linear-to-r from-blue-600 via-indigo-500 to-purple-500 bg-clip-text text-transparent"
+					class="bg-linear-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent"
 					>John Doe</span
 				>,
 				<br class="hidden sm:block" />
@@ -17,7 +18,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 			</p>
 		</div>
 		<div
-			class="mb-14 p-1 rounded-full bg-linear-to-tr from-blue-500 via-indigo-500 to-purple-500 shadow-2xl shadow-blue-500/25 hover:shadow-blue-500/40 transition-shadow duration-500"
+			class="mb-14 p-1 rounded-full bg-linear-to-tr from-blue-600 via-blue-500 to-blue-400 shadow-2xl shadow-blue-500/25 hover:shadow-blue-500/40 transition-shadow duration-500"
 		>
 			<img
 				src="/random_person.jpg"
@@ -32,9 +33,34 @@ import MainLayout from "../layouts/MainLayout.astro";
 				Passionate about crafting interactive and user-centered digital
 				experiences.
 			</p>
-			<div
-				class="mt-4 mx-auto w-16 h-1 rounded-full bg-linear-to-r from-blue-500 to-indigo-500"
-			>
+			<div class="mt-6 flex flex-wrap justify-center gap-4">
+				<a
+					href="https://wa.me/1234567890"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="text-xl inline-flex items-center gap-2 px-6 py-3 bg-green-500 text-white font-family-outfit font-semibold rounded-full shadow-lg shadow-green-500/25 hover:bg-green-600 hover:shadow-green-500/40 hover:scale-105 active:scale-95 transition-all duration-300"
+				>
+					<IoLogoWhatsapp client:load />
+					Send Message
+				</a>
+				<a
+					href="https://linkedin.com/in/your-profile"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="text-xl inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-family-outfit font-semibold rounded-full shadow-lg shadow-blue-600/25 hover:bg-blue-700 hover:shadow-blue-600/40 hover:scale-105 active:scale-95 transition-all duration-300"
+				>
+					<IoLogoLinkedin client:load />
+					LinkedIn
+				</a>
+				<a
+					href="https://github.com/your-username"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="text-xl inline-flex items-center gap-2 px-6 py-3 bg-gray-800 text-white font-family-outfit font-semibold rounded-full shadow-lg shadow-gray-800/25 hover:bg-gray-900 hover:shadow-gray-800/40 hover:scale-105 active:scale-95 transition-all duration-300"
+				>
+					<IoLogoGithub client:load />
+					GitHub
+				</a>
 			</div>
 		</div>
 	</section>
