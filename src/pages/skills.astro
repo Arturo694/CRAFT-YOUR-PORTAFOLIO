@@ -1,0 +1,277 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import {
+    IoCodeSlashOutline,
+    IoServerOutline,
+    IoSettingsOutline,
+    IoColorPaletteOutline,
+} from "react-icons/io5";
+---
+
+<MainLayout>
+    <section class="w-full max-w-5xl mx-auto px-6 pt-12 pb-8">
+        <p
+            class="font-family-outfit text-sm uppercase tracking-widest text-blue-600 font-semibold mb-2 text-center"
+        >
+            What I know
+        </p>
+        <h2
+            class="font-family-gabarito font-bold text-3xl md:text-4xl text-center text-gray-800 mb-10"
+        >
+            My skills & tools
+        </h2>
+        <div class="grid gap-6 md:grid-cols-2">
+            <div
+                class="group bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+                <div class="flex items-center gap-3 mb-5">
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 text-2xl group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shrink-0"
+                    >
+                        <IoCodeSlashOutline client:load />
+                    </span>
+                    <h3
+                        class="font-family-gabarito font-bold text-lg text-gray-800"
+                    >
+                        Frontend
+                    </h3>
+                </div>
+                <div class="space-y-3">
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            React
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Library for building interactive user interfaces
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            TypeScript
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Typed superset of JavaScript for safer code
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Tailwind CSS
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Utility-first CSS framework for rapid styling
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Next.js
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            React framework with SSR and file-based routing
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Astro
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Static site builder with islands architecture
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            HTML / CSS
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Foundations of the web — semantics and styling
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="group bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+                <div class="flex items-center gap-3 mb-5">
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 text-2xl group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shrink-0"
+                    >
+                        <IoServerOutline client:load />
+                    </span>
+                    <h3
+                        class="font-family-gabarito font-bold text-lg text-gray-800"
+                    >
+                        Backend
+                    </h3>
+                </div>
+                <div class="space-y-3">
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Node.js
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            JavaScript runtime for building server-side apps
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Python
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Versatile language for web, data, and automation
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            FastAPI
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Modern Python web framework for high-performance APIs
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            PostgreSQL
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Relational database with robust features
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Prisma
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Type-safe ORM for Node.js and TypeScript
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            GraphQL
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Query language for flexible and efficient APIs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="group bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+                <div class="flex items-center gap-3 mb-5">
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 text-2xl group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shrink-0"
+                    >
+                        <IoSettingsOutline client:load />
+                    </span>
+                    <h3
+                        class="font-family-gabarito font-bold text-lg text-gray-800"
+                    >
+                        Tools & DevOps
+                    </h3>
+                </div>
+                <div class="space-y-3">
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Git
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Distributed version control for tracking changes
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Docker
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Container platform for consistent environments
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            GitHub Actions
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            CI/CD pipelines built into GitHub
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Vercel
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Frontend deployment and hosting platform
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Linux
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Open-source OS for development and servers
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            AWS
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Cloud infrastructure and services at scale
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="group bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+                <div class="flex items-center gap-3 mb-5">
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 text-2xl group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shrink-0"
+                    >
+                        <IoColorPaletteOutline client:load />
+                    </span>
+                    <h3
+                        class="font-family-gabarito font-bold text-lg text-gray-800"
+                    >
+                        Design
+                    </h3>
+                </div>
+                <div class="space-y-3">
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Figma
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Collaborative interface design tool
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            UI/UX Design
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Crafting intuitive and engaging user experiences
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Responsive Design
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Layouts that adapt to any screen size
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-family-outfit font-semibold text-sm text-gray-800">
+                            Accessibility
+                        </p>
+                        <p class="font-family-outfit text-xs text-gray-400 leading-relaxed">
+                            Building inclusive web experiences for everyone
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</MainLayout>

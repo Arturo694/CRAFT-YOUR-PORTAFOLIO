@@ -53,29 +53,16 @@ import {
             <li
                 class="relative group cursor-pointer flex items-center gap-2 py-2 text-black transition-colors duration-300"
             >
-                <span
-                    class="text-lg group-hover:text-blue-600 group-hover:-translate-y-1 group-hover:scale-110 transition-all duration-300 flex items-center"
-                >
-                    <IoCodeSlashOutline client:load />
-                </span>
-                <span class="font-medium text-xs uppercase tracking-widest"
-                    >My Projects</span
-                >
-                <span
-                    class="absolute left-0 bottom-0 w-full h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-center"
-                ></span>
-            </li>
-            <li
-                class="relative group cursor-pointer flex items-center gap-2 py-2 text-black transition-colors duration-300"
-            >
-                <span
-                    class="text-lg group-hover:text-blue-600 group-hover:-translate-y-1 group-hover:scale-110 transition-all duration-300 flex items-center"
-                >
-                    <IoLayersOutline client:load />
-                </span>
-                <span class="font-medium text-xs uppercase tracking-widest"
-                    >Skills</span
-                >
+                <a href="/myprojects" class="flex items-center gap-2">
+                    <span
+                        class="text-lg group-hover:text-blue-600 group-hover:-translate-y-1 group-hover:scale-110 transition-all duration-300 flex items-center"
+                    >
+                        <IoCodeSlashOutline client:load />
+                    </span>
+                    <span class="font-medium text-xs uppercase tracking-widest"
+                        >My Projects</span
+                    >
+                </a>
                 <span
                     class="absolute left-0 bottom-0 w-full h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-center"
                 ></span>
@@ -83,14 +70,33 @@ import {
             <li
                 class="relative group cursor-pointer flex items-center gap-2 py-2 text-black transition-colors duration-300"
             >
+                <a href="/skills" class="flex items-center gap-2">
+                    <span
+                        class="text-lg group-hover:text-blue-600 group-hover:-translate-y-1 group-hover:scale-110 transition-all duration-300 flex items-center"
+                    >
+                        <IoLayersOutline client:load />
+                    </span>
+                    <span class="font-medium text-xs uppercase tracking-widest"
+                        >Skills</span
+                    >
+                </a>
                 <span
-                    class="text-lg group-hover:text-blue-600 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:scale-110 transition-all duration-300 flex items-center"
-                >
-                    <IoPaperPlaneOutline client:load />
-                </span>
-                <span class="font-medium text-xs uppercase tracking-widest"
-                    >Contact me</span
-                >
+                    class="absolute left-0 bottom-0 w-full h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-center"
+                ></span>
+            </li>
+            <li
+                class="relative group cursor-pointer flex items-center gap-2 py-2 text-black transition-colors duration-300"
+            >
+                <a href="/contactme" class="flex items-center gap-2">
+                    <span
+                        class="text-lg group-hover:text-blue-600 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:scale-110 transition-all duration-300 flex items-center"
+                    >
+                        <IoPaperPlaneOutline client:load />
+                    </span>
+                    <span class="font-medium text-xs uppercase tracking-widest"
+                        >Contact me</span
+                    >
+                </a>
                 <span
                     class="absolute left-0 bottom-0 w-full h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-center"
                 ></span>

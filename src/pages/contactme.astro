@@ -1,0 +1,114 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import {
+    IoLogoWhatsapp,
+    IoLogoLinkedin,
+    IoLogoGithub,
+    IoMailOutline,
+    IoLocationOutline,
+    IoCallOutline,
+} from "react-icons/io5";
+---
+
+<MainLayout>
+    <section class="w-full max-w-5xl mx-auto px-6 pt-12 pb-8">
+        <p
+            class="font-family-outfit text-sm uppercase tracking-widest text-blue-600 font-semibold mb-2 text-center"
+        >
+            Get in touch
+        </p>
+        <h2
+            class="font-family-gabarito font-bold text-3xl md:text-4xl text-center text-gray-800 mb-12"
+        >
+            Let's work together
+        </h2>
+        <div
+            class="flex flex-col md:flex-row items-center gap-10 md:gap-16 bg-white border border-neutral-200 rounded-2xl p-8 md:p-10 shadow-sm"
+        >
+            <div class="shrink-0">
+                <div
+                    class="p-1 rounded-full bg-linear-to-tr from-blue-600 via-blue-500 to-blue-400 shadow-2xl shadow-blue-500/25 hover:shadow-blue-500/40 transition-shadow duration-500"
+                >
+                    <img
+                        src="/random_person.jpg"
+                        alt="John Doe"
+                        class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-white"
+                    />
+                </div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <p
+                    class="font-family-gabarito font-bold text-2xl md:text-3xl text-gray-800 mb-1"
+                >
+                    John Doe
+                </p>
+                <p
+                    class="font-family-outfit text-sm text-gray-400 mb-6"
+                >
+                    Developer & Designer
+                </p>
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-blue-50 text-blue-600 text-lg shrink-0"
+                        >
+                            <IoMailOutline client:load />
+                        </span>
+                        <span
+                            class="font-family-outfit text-sm text-gray-600"
+                        >john.doe@example.com</span>
+                    </div>
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-blue-50 text-blue-600 text-lg shrink-0"
+                        >
+                            <IoCallOutline client:load />
+                        </span>
+                        <span
+                            class="font-family-outfit text-sm text-gray-600"
+                        >+1 (234) 567-890</span>
+                    </div>
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <span
+                            class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-blue-50 text-blue-600 text-lg shrink-0"
+                        >
+                            <IoLocationOutline client:load />
+                        </span>
+                        <span
+                            class="font-family-outfit text-sm text-gray-600"
+                        >San Francisco, CA</span>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                    <a
+                        href="https://wa.me/1234567890"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 px-5 py-2.5 bg-green-500 text-white font-family-outfit font-semibold text-sm rounded-full shadow-lg shadow-green-500/25 hover:bg-green-600 hover:shadow-green-500/40 hover:scale-105 active:scale-95 transition-all duration-300"
+                    >
+                        <IoLogoWhatsapp client:load />
+                        WhatsApp
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/your-profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white font-family-outfit font-semibold text-sm rounded-full shadow-lg shadow-blue-600/25 hover:bg-blue-700 hover:shadow-blue-600/40 hover:scale-105 active:scale-95 transition-all duration-300"
+                    >
+                        <IoLogoLinkedin client:load />
+                        LinkedIn
+                    </a>
+                    <a
+                        href="https://github.com/your-username"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-800 text-white font-family-outfit font-semibold text-sm rounded-full shadow-lg shadow-gray-800/25 hover:bg-gray-900 hover:shadow-gray-800/40 hover:scale-105 active:scale-95 transition-all duration-300"
+                    >
+                        <IoLogoGithub client:load />
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</MainLayout>
