@@ -1,0 +1,380 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import {
+    IoCodeSlashOutline,
+    IoRocketOutline,
+    IoHeartOutline,
+    IoBulbOutline,
+    IoSchoolOutline,
+    IoBriefcaseOutline,
+    IoTerminalOutline,
+    IoCafeOutline,
+    IoMusicalNotesOutline,
+    IoGameControllerOutline,
+} from "react-icons/io5";
+---
+
+<MainLayout>
+    <!-- Hero banner -->
+    <section class="w-full max-w-5xl mx-auto px-6 pt-12 pb-8">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+            <div
+                class="shrink-0 p-1 rounded-full bg-linear-to-tr from-blue-600 via-blue-500 to-blue-400 shadow-2xl shadow-blue-500/25"
+            >
+                <img
+                    src="/random_person.jpg"
+                    alt="John Doe"
+                    class="w-40 h-40 rounded-full object-cover border-4 border-white"
+                />
+            </div>
+            <div>
+                <p
+                    class="font-family-outfit text-sm uppercase tracking-widest text-blue-600 font-semibold mb-2"
+                >
+                    Who am I?
+                </p>
+                <h1
+                    class="font-family-gabarito font-bold text-4xl md:text-5xl leading-tight text-gray-800 mb-4"
+                >
+                    I'm <span
+                        class="bg-linear-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent"
+                        >John Doe</span
+                    > —<br class="hidden sm:block" />
+                    a builder at heart.
+                </h1>
+                <p
+                    class="font-family-outfit text-gray-500 text-lg leading-relaxed max-w-xl"
+                >
+                    Software developer with a passion for turning complex
+                    problems into elegant, human-centered digital experiences. I
+                    write clean code, obsess over the details, and never stop
+                    learning.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="w-full h-px bg-neutral-200"></div>
+    </div>
+
+    <!-- Core values -->
+    <section class="w-full max-w-5xl mx-auto px-6 py-12">
+        <p
+            class="font-family-outfit text-sm uppercase tracking-widest text-blue-600 font-semibold mb-2 text-center"
+        >
+            What drives me
+        </p>
+        <h2
+            class="font-family-gabarito font-bold text-3xl text-center text-gray-800 mb-10"
+        >
+            My core values
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+                class="group bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+                <span
+                    class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 text-2xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300"
+                >
+                    <IoCodeSlashOutline client:load />
+                </span>
+                <h3
+                    class="font-family-gabarito font-bold text-lg text-gray-800 mb-2"
+                >
+                    Clean Code
+                </h3>
+                <p
+                    class="font-family-outfit text-sm text-gray-500 leading-relaxed"
+                >
+                    Code is communication. It should be readable, maintainable,
+                    and intentional.
+                </p>
+            </div>
+            <div
+                class="group bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+                <span
+                    class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 text-2xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300"
+                >
+                    <IoBulbOutline client:load />
+                </span>
+                <h3
+                    class="font-family-gabarito font-bold text-lg text-gray-800 mb-2"
+                >
+                    Curiosity
+                </h3>
+                <p
+                    class="font-family-outfit text-sm text-gray-500 leading-relaxed"
+                >
+                    Every project is a chance to explore a new idea or approach
+                    I've never tried before.
+                </p>
+            </div>
+            <div
+                class="group bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+                <span
+                    class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 text-2xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300"
+                >
+                    <IoRocketOutline client:load />
+                </span>
+                <h3
+                    class="font-family-gabarito font-bold text-lg text-gray-800 mb-2"
+                >
+                    Shipping
+                </h3>
+                <p
+                    class="font-family-outfit text-sm text-gray-500 leading-relaxed"
+                >
+                    Done is better than perfect. I move fast, iterate, and
+                    improve continuously.
+                </p>
+            </div>
+            <div
+                class="group bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+                <span
+                    class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 text-2xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300"
+                >
+                    <IoHeartOutline client:load />
+                </span>
+                <h3
+                    class="font-family-gabarito font-bold text-lg text-gray-800 mb-2"
+                >
+                    Empathy
+                </h3>
+                <p
+                    class="font-family-outfit text-sm text-gray-500 leading-relaxed"
+                >
+                    Great software starts with understanding the people who use
+                    it.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="w-full h-px bg-neutral-200"></div>
+    </div>
+
+    <!-- Timeline -->
+    <section class="w-full max-w-5xl mx-auto px-6 py-12">
+        <p
+            class="font-family-outfit text-sm uppercase tracking-widest text-blue-600 font-semibold mb-2 text-center"
+        >
+            My journey
+        </p>
+        <h2
+            class="font-family-gabarito font-bold text-3xl text-center text-gray-800 mb-10"
+        >
+            How I got here
+        </h2>
+        <div
+            class="relative pl-8 border-l-2 border-blue-100 space-y-10 max-w-2xl mx-auto"
+        >
+            <div class="relative group">
+                <span
+                    class="absolute left-[-2.65rem] top-1 w-5 h-5 rounded-full border-2 border-blue-500 bg-white group-hover:bg-blue-500 transition-colors duration-300"
+                ></span>
+                <div
+                    class="bg-white border border-neutral-200 rounded-2xl p-5 shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5 transition-all duration-300"
+                >
+                    <div class="flex items-center gap-3 mb-2">
+                        <span
+                            class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-blue-50 text-blue-600 text-lg"
+                        >
+                            <IoSchoolOutline client:load />
+                        </span>
+                        <span
+                            class="font-family-outfit text-xs font-semibold uppercase tracking-widest text-blue-500"
+                            >2019</span
+                        >
+                    </div>
+                    <h3
+                        class="font-family-gabarito font-bold text-gray-800 text-lg"
+                    >
+                        Started Computer Science
+                    </h3>
+                    <p class="font-family-outfit text-xs text-gray-400 mb-2">
+                        University of Technology
+                    </p>
+                    <p
+                        class="font-family-outfit text-sm text-gray-500 leading-relaxed"
+                    >
+                        Fell in love with programming. Built my first web app at
+                        a hackathon and never looked back.
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <span
+                    class="absolute left-[-2.65rem] top-1 w-5 h-5 rounded-full border-2 border-blue-500 bg-white group-hover:bg-blue-500 transition-colors duration-300"
+                ></span>
+                <div
+                    class="bg-white border border-neutral-200 rounded-2xl p-5 shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5 transition-all duration-300"
+                >
+                    <div class="flex items-center gap-3 mb-2">
+                        <span
+                            class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-blue-50 text-blue-600 text-lg"
+                        >
+                            <IoTerminalOutline client:load />
+                        </span>
+                        <span
+                            class="font-family-outfit text-xs font-semibold uppercase tracking-widest text-blue-500"
+                            >2021</span
+                        >
+                    </div>
+                    <h3
+                        class="font-family-gabarito font-bold text-gray-800 text-lg"
+                    >
+                        First Open Source Contribution
+                    </h3>
+                    <p class="font-family-outfit text-xs text-gray-400 mb-2">
+                        GitHub
+                    </p>
+                    <p
+                        class="font-family-outfit text-sm text-gray-500 leading-relaxed"
+                    >
+                        Submitted a PR to a popular library, got merged, and
+                        discovered the joy of collaborative development.
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <span
+                    class="absolute left-[-2.65rem] top-1 w-5 h-5 rounded-full border-2 border-blue-500 bg-white group-hover:bg-blue-500 transition-colors duration-300"
+                ></span>
+                <div
+                    class="bg-white border border-neutral-200 rounded-2xl p-5 shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5 transition-all duration-300"
+                >
+                    <div class="flex items-center gap-3 mb-2">
+                        <span
+                            class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-blue-50 text-blue-600 text-lg"
+                        >
+                            <IoBriefcaseOutline client:load />
+                        </span>
+                        <span
+                            class="font-family-outfit text-xs font-semibold uppercase tracking-widest text-blue-500"
+                            >2022</span
+                        >
+                    </div>
+                    <h3
+                        class="font-family-gabarito font-bold text-gray-800 text-lg"
+                    >
+                        Junior Developer
+                    </h3>
+                    <p class="font-family-outfit text-xs text-gray-400 mb-2">
+                        StartupXYZ
+                    </p>
+                    <p
+                        class="font-family-outfit text-sm text-gray-500 leading-relaxed"
+                    >
+                        Joined a fast-moving startup, shipped features in React
+                        and Node.js, and learned how production systems actually
+                        work.
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <span
+                    class="absolute left-[-2.65rem] top-1 w-5 h-5 rounded-full border-2 border-blue-500 bg-white group-hover:bg-blue-500 transition-colors duration-300"
+                ></span>
+                <div
+                    class="bg-white border border-neutral-200 rounded-2xl p-5 shadow-sm group-hover:shadow-md group-hover:-translate-y-0.5 transition-all duration-300"
+                >
+                    <div class="flex items-center gap-3 mb-2">
+                        <span
+                            class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-blue-50 text-blue-600 text-lg"
+                        >
+                            <IoRocketOutline client:load />
+                        </span>
+                        <span
+                            class="font-family-outfit text-xs font-semibold uppercase tracking-widest text-blue-500"
+                            >2024</span
+                        >
+                    </div>
+                    <h3
+                        class="font-family-gabarito font-bold text-gray-800 text-lg"
+                    >
+                        Full-Stack Developer
+                    </h3>
+                    <p class="font-family-outfit text-xs text-gray-400 mb-2">
+                        Tech Corp
+                    </p>
+                    <p
+                        class="font-family-outfit text-sm text-gray-500 leading-relaxed"
+                    >
+                        Leading frontend architecture, mentoring junior devs,
+                        and building scalable web platforms used by thousands.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="w-full h-px bg-neutral-200"></div>
+    </div>
+
+    <!-- Fun facts -->
+    <section class="w-full max-w-5xl mx-auto px-6 py-12 pb-20">
+        <p
+            class="font-family-outfit text-sm uppercase tracking-widest text-blue-600 font-semibold mb-2 text-center"
+        >
+            Beyond the keyboard
+        </p>
+        <h2
+            class="font-family-gabarito font-bold text-3xl text-center text-gray-800 mb-10"
+        >
+            A few fun facts
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            <div
+                class="group flex flex-col items-center text-center gap-4 bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+                <span
+                    class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 text-3xl group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300"
+                >
+                    <IoCafeOutline client:load />
+                </span>
+                <p
+                    class="font-family-outfit text-gray-500 text-sm leading-relaxed"
+                >
+                    Fueled by coffee. Seriously, at least 3 cups a day.
+                </p>
+            </div>
+            <div
+                class="group flex flex-col items-center text-center gap-4 bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+                <span
+                    class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 text-3xl group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300"
+                >
+                    <IoMusicalNotesOutline client:load />
+                </span>
+                <p
+                    class="font-family-outfit text-gray-500 text-sm leading-relaxed"
+                >
+                    Lo-fi beats and jazz are my coding soundtrack of choice.
+                </p>
+            </div>
+            <div
+                class="group flex flex-col items-center text-center gap-4 bg-white border border-neutral-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+                <span
+                    class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 text-3xl group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300"
+                >
+                    <IoGameControllerOutline client:load />
+                </span>
+                <p
+                    class="font-family-outfit text-gray-500 text-sm leading-relaxed"
+                >
+                    Weekend gamer — strategy and indie games are my jam.
+                </p>
+            </div>
+        </div>
+    </section>
+</MainLayout>

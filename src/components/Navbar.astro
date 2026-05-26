@@ -23,8 +23,8 @@ import {
             >
                 <IoTerminalOutline client:load />
             </span>
-            <span class="text-black transition-colors duration-300"
-                >John Doe</span
+            <a href="/" class="text-black transition-colors duration-300"
+                >John Doe</a
             >
         </h1>
         <button
@@ -36,14 +36,16 @@ import {
             <li
                 class="relative group cursor-pointer flex items-center gap-2 py-2 text-black transition-colors duration-300"
             >
-                <span
-                    class="text-lg group-hover:text-blue-600 group-hover:-translate-y-1 group-hover:scale-110 transition-all duration-300 flex items-center"
-                >
-                    <IoPersonOutline client:load />
-                </span>
-                <span class="font-medium text-xs uppercase tracking-widest"
-                    >How am I?</span
-                >
+                <a href="/whoami" class="flex items-center gap-2">
+                    <span
+                        class="text-lg group-hover:text-blue-600 group-hover:-translate-y-1 group-hover:scale-110 transition-all duration-300 flex items-center"
+                    >
+                        <IoPersonOutline client:load />
+                    </span>
+                    <span class="font-medium text-xs uppercase tracking-widest"
+                        >How am I?</span
+                    >
+                </a>
                 <span
                     class="absolute left-0 bottom-0 w-full h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-center"
                 ></span>
