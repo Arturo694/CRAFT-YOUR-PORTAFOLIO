@@ -1,1 +1,12 @@
+/* Outfit font */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* Gabarito font */
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+    --font-family-gabarito: "Gabarito", sans-serif;
+    --font-family-outfit: "Outfit", sans-serif;
+}

@@ -1,3 +1,10 @@
-<nav>
-    <h1>hello</h1>
+---
+import { IoMenuOutline } from "react-icons/io5";
+---
+
+<nav class="border-b border-neutral-400 flex justify-between items-center p-5">
+    <h1 class="font-family-gabarito text-2xl font-bold">John Doe</h1>
+    <button class="p-2 border rounded-lg border-neutral-500 text-xl transition-all duration-300 ease-out hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-95">
+        <IoMenuOutline client:load />
+    </button>
 </nav>
