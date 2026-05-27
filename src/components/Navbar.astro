@@ -1,6 +1,6 @@
 ---
+import ModalNav from "./react/ModalNav";
 import {
-    IoMenuOutline,
     IoPersonOutline,
     IoCodeSlashOutline,
     IoLayersOutline,
@@ -27,11 +27,7 @@ import {
                 >John Doe</a
             >
         </h1>
-        <button
-            class="p-2 border rounded-lg border-neutral-200 text-xl text-black transition-colors duration-300 ease-in-out hover:bg-blue-600 hover:border-neutral-300 hover:text-white active:scale-95 sm:hidden"
-        >
-            <IoMenuOutline client:load />
-        </button>
+        <ModalNav client:load />
         <ul class="hidden sm:flex gap-12 ml-16 font-family-outfit">
             <li
                 class="relative group cursor-pointer flex items-center gap-2 py-2 text-black transition-colors duration-300"
